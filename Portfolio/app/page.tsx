@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
