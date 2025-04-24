@@ -24,7 +24,7 @@ export default function ProjectsPage() {
           <ProjectCard
             title="HyperStream Engine Pipeline"
             description="Cloud-native data orchestration platform integrating workflows across distributed systems."
-            image="/Images/DE1.PNG?height=400&width=600"
+            image="/Images/DE1.png?height=400&width=600"
             tags={["AWS", "ETL", "Snowflake", "Kafka", "Airflow"]}
             githubUrl="https://github.com/AiWithAadil/HyperStream_Engine_Pipeline"
             category="aws"
@@ -100,7 +100,7 @@ export default function ProjectsPage() {
           <ProjectCard
             title="HyperStream Engine Pipeline"
             description="Cloud-native data orchestration platform integrating workflows across distributed systems."
-            image="/Images/DE1.PNG?height=400&width=600"
+            image="/Images/DE1.png?height=400&width=600"
             tags={["AWS", "Python", "ETL"]}
             githubUrl="https://github.com/AiWithAadil/HyperStream_Engine_Pipeline"
             category="aws"
