@@ -8,20 +8,27 @@ export default function ProjectsPage() {
     <div className="container px-4 py-12 md:px-6 md:py-24">
       <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">My Projects</h1>
       <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-        A <span className="text-primary font-bold">showcase</span> of my <span className="text-primary font-bold">work</span> in AWS Data Engineering, Web Development, and AI Tools.
+        A <span className="text-primary font-bold">showcase</span> of my{" "}
+        <span className="text-primary font-bold">work</span> in AWS Data Engineering, Web Development, and AI Tools.
       </p>
 
       <Tabs defaultValue="all" className="mt-8">
-          <div className="overflow-x-auto">
-            <TabsList className="mb-8 flex w-max min-w-full gap-2">
-              <TabsTrigger value="all">All Projects</TabsTrigger>
-              <TabsTrigger value="aws">AWS Data Engineering</TabsTrigger>
-              <TabsTrigger value="web">Web Development</TabsTrigger>
-              <TabsTrigger value="ai">AI Tools</TabsTrigger>
-              </TabsList>
-          </div>
-      </Tabs>
-
+        <div className="overflow-x-auto pb-2">
+          <TabsList className="mb-6 flex h-auto flex-wrap sm:flex-nowrap">
+            <TabsTrigger value="all" className="flex-shrink-0 text-sm sm:text-base">
+              All Projects
+            </TabsTrigger>
+            <TabsTrigger value="aws" className="flex-shrink-0 text-sm sm:text-base">
+              AWS Data Engineering
+            </TabsTrigger>
+            <TabsTrigger value="web" className="flex-shrink-0 text-sm sm:text-base">
+              Web Development
+            </TabsTrigger>
+            <TabsTrigger value="ai" className="flex-shrink-0 text-sm sm:text-base">
+              AI Tools
+            </TabsTrigger>
+          </TabsList>
+        </div>
 
         {/* All Projects Tab */}
         <TabsContent value="all" className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -186,4 +193,3 @@ export default function ProjectsPage() {
     </div>
   )
 }
-
