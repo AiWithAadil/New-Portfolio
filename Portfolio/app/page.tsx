@@ -16,9 +16,9 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gradient">About Me</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I'm a passionate professional specializing in <span className="text-blue-500 font-bold">AWS Data Engineering</span>, Web Development, and Generative AI.
-                With a strong background in <span className="text-blue-500 font-bold">building scalable solutions</span>, I strive to create impactful technology that
-                solves <span className="text-blue-500 font-bold">real-world problems</span>.
+  I&apos;m a passionate professional specializing in <span className="text-blue-500 font-bold">AWS Data Engineering</span>, Web Development, and Generative AI.
+  With a strong background in <span className="text-blue-500 font-bold">building scalable solutions</span>, I strive to create impactful technology that
+  solves <span className="text-blue-500 font-bold">real-world problems</span>.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
