@@ -39,12 +39,10 @@ export async function saveContactToCSV(formData: FormData): Promise<{ success: b
     let fileExists = false
     try {
       await fs.access(csvFilePath)
-      fileExists = true
     } catch (error) {
       // File doesn't exist, create with headers
       await fs.writeFile(csvFilePath, "Name,Email,Subject,Message,Date\n")
     }
-
     // Format data for CSV (escape commas and quotes)
     const formatForCSV = (text: string) => {
       // Replace double quotes with two double quotes and wrap in quotes if contains comma
