@@ -16,9 +16,9 @@ export default function ContactPage() {
         <div className="space-y-4 text-center">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-gradient">Get in Touch</h1>
           <p className="text-muted-foreground md:text-xl max-w-[800px] mx-auto">
-            I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out
-            through any of the channels below.
-          </p>
+   I&apos;m always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out
+   through any of the channels below.
+        </p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
