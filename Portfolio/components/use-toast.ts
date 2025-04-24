@@ -1,7 +1,11 @@
-/* eslint-disable */
-
 const TOAST_LIMIT = 1
 const TOAST_REMOVE_DELAY = 1000000
+
+type ToastProps = {
+  open?: boolean
+  onOpenChange?: (open: boolean) => void
+  // Add other properties for Toast component here
+}
 
 type ToasterToast = ToastProps & {
   id: string
@@ -146,7 +150,7 @@ function useToast() {
         listeners.splice(index, 1)
       }
     }
-  }, []) // Removed unnecessary dependency: [state]
+  }, [])
 
   return {
     ...state,
