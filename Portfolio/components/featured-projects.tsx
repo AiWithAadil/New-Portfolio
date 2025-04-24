@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight } from 'lucide-react'
 import { motion } from "framer-motion"
 import { projectsData } from "@/data/projectsFeature" // Import the projects data
 
@@ -37,13 +37,16 @@ export function FeaturedProjects() {
             className="group relative overflow-hidden rounded-lg border shadow-md card-hover"
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-accent/80 z-10" />
-            <Image
-              src={featuredProjects[0].image || "Images/DE1.PNG"}
-              alt={featuredProjects[0].title}
-              width={600}
-              height={400}
-              className="h-60 w-full object-cover transition-transform group-hover:scale-105"
-            />
+            <div className="relative h-60 w-full">
+              <Image
+                src={featuredProjects[0].image || "/Images/DE1.png"}
+                alt={featuredProjects[0].title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover transition-transform group-hover:scale-105"
+                priority
+              />
+            </div>
             <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
               <h3 className="text-xl font-bold text-white">{featuredProjects[0].title}</h3>
               <p className="text-sm text-white/90">{featuredProjects[0].tags.join(", ")}</p>
@@ -59,13 +62,16 @@ export function FeaturedProjects() {
             className="group relative overflow-hidden rounded-lg border shadow-md card-hover"
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/80 z-10" />
-            <Image
-              src={featuredProjects[1].image || "/placeholder.svg"}
-              alt={featuredProjects[1].title}
-              width={600}
-              height={400}
-              className="h-60 w-full object-cover transition-transform group-hover:scale-105"
-            />
+            <div className="relative h-60 w-full">
+              <Image
+                src={featuredProjects[1].image || "/Images/web1.jpg"}
+                alt={featuredProjects[1].title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover transition-transform group-hover:scale-105"
+                priority
+              />
+            </div>
             <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
               <h3 className="text-xl font-bold text-white">{featuredProjects[1].title}</h3>
               <p className="text-sm text-white/90">{featuredProjects[1].tags.join(", ")}</p>
@@ -81,13 +87,15 @@ export function FeaturedProjects() {
             className="group relative overflow-hidden rounded-lg border shadow-md card-hover"
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/80 z-10" />
-            <Image
-              src={featuredProjects[2].image || "/placeholder.svg"}
-              alt={featuredProjects[2].title}
-              width={600}
-              height={400}
-              className="h-60 w-full object-cover transition-transform group-hover:scale-105"
-            />
+            <div className="relative h-60 w-full">
+              <Image
+                src={featuredProjects[2].image || "/Images/AI1.PNG"}
+                alt={featuredProjects[2].title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover transition-transform group-hover:scale-105"
+              />
+            </div>
             <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
               <h3 className="text-xl font-bold text-white">{featuredProjects[2].title}</h3>
               <p className="text-sm text-white/90">{featuredProjects[2].tags.join(", ")}</p>
@@ -103,13 +111,15 @@ export function FeaturedProjects() {
             className="group relative overflow-hidden rounded-lg border shadow-md card-hover"
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-accent/80 z-10" />
-            <Image
-              src={featuredProjects[3].image || "/placeholder.svg"}
-              alt={featuredProjects[3].title}
-              width={600}
-              height={400}
-              className="h-60 w-full object-cover transition-transform group-hover:scale-105"
-            />
+            <div className="relative h-60 w-full">
+              <Image
+                src={featuredProjects[3].image || "/Images/DE2.PNG"}
+                alt={featuredProjects[3].title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover transition-transform group-hover:scale-105"
+              />
+            </div>
             <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
               <h3 className="text-xl font-bold text-white">{featuredProjects[3].title}</h3>
               <p className="text-sm text-white/90">{featuredProjects[3].tags.join(", ")}</p>
