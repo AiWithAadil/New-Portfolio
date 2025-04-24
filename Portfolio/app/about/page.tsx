@@ -23,7 +23,7 @@ export default function AboutPage() {
             About Me
           </h1>
           <p className="mt-4 text-muted-foreground md:text-xl/relaxed">
-            I'm a passionate professional with expertise in{" "}
+            I&apos;m a passionate professional with expertise in{" "}
             <span className="text-primary font-bold">AWS Data Engineering</span>, Web Development, and Generative AI.
             With a strong background in <span className="text-primary font-bold">building scalable solutions</span>, I
             strive to create impactful technology that solves real-world problems.
@@ -41,7 +41,7 @@ export default function AboutPage() {
                 <Download className="mr-2 h-4 w-4" />
               Download Resume
               </a>
-          </Button>
+            </Button>
           </div>
         </div>
 
@@ -116,4 +116,3 @@ export default function AboutPage() {
     </div>
   )
 }
-
