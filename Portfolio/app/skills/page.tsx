@@ -13,7 +13,7 @@ export default function SkillsPage() {
 
       <Tabs defaultValue="all" className="mt-8">
         <div className="overflow-x-auto pb-2 mb-6">
-          <TabsList className="h-auto flex-wrap sm:flex-nowrap bg-gradient-to-r from-background to-muted/50 p-1 rounded-xl">
+          <TabsList className="h-auto flex-wrap sm:flex-nowrap p-1 rounded-xl">
             <TabsTrigger
               value="all"
               className="flex-shrink-0 text-sm sm:text-base data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md transition-all duration-200"
