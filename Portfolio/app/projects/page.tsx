@@ -12,12 +12,16 @@ export default function ProjectsPage() {
       </p>
 
       <Tabs defaultValue="all" className="mt-8">
-        <TabsList className="mb-8">
-          <TabsTrigger value="all">All Projects</TabsTrigger>
-          <TabsTrigger value="aws">AWS Data Engineering</TabsTrigger>
-          <TabsTrigger value="web">Web Development</TabsTrigger>
-          <TabsTrigger value="ai">AI Tools</TabsTrigger>
-        </TabsList>
+          <div className="overflow-x-auto">
+            <TabsList className="mb-8 flex w-max min-w-full gap-2">
+              <TabsTrigger value="all">All Projects</TabsTrigger>
+              <TabsTrigger value="aws">AWS Data Engineering</TabsTrigger>
+              <TabsTrigger value="web">Web Development</TabsTrigger>
+              <TabsTrigger value="ai">AI Tools</TabsTrigger>
+              </TabsList>
+          </div>
+      </Tabs>
+
 
         {/* All Projects Tab */}
         <TabsContent value="all" className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
