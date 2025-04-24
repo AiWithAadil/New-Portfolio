@@ -38,7 +38,7 @@ export function FeaturedProjects() {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-accent/80 z-10" />
             <Image
-              src={featuredProjects[0].image || "/placeholder.svg"}
+              src={featuredProjects[0].image || "Images/DE1.PNG"}
               alt={featuredProjects[0].title}
               width={600}
               height={400}
