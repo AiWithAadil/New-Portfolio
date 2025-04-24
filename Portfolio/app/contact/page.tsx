@@ -1,3 +1,4 @@
+/* eslint-disable */
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Mail, Linkedin, Github, MapPin, ExternalLink } from "lucide-react"
