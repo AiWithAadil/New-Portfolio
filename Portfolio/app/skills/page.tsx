@@ -1,3 +1,5 @@
+"use client"
+
 import { SkillCard } from "@/components/skill-card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
@@ -10,12 +12,35 @@ export default function SkillsPage() {
       </p>
 
       <Tabs defaultValue="all" className="mt-8">
-        <TabsList className="mb-8">
-          <TabsTrigger value="all">All Skills</TabsTrigger>
-          <TabsTrigger value="aws">AWS & Data</TabsTrigger>
-          <TabsTrigger value="web">Web Development</TabsTrigger>
-          <TabsTrigger value="ai">AI & ML</TabsTrigger>
-        </TabsList>
+        <div className="overflow-x-auto pb-2 mb-6">
+          <TabsList className="h-auto flex-wrap sm:flex-nowrap bg-gradient-to-r from-background to-muted/50 p-1 rounded-xl">
+            <TabsTrigger
+              value="all"
+              className="flex-shrink-0 text-sm sm:text-base data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md transition-all duration-200"
+            >
+              All Skills
+            </TabsTrigger>
+            <TabsTrigger
+              value="aws"
+              className="flex-shrink-0 text-sm sm:text-base data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md transition-all duration-200"
+            >
+              AWS & Data
+            </TabsTrigger>
+            <TabsTrigger
+              value="web"
+              className="flex-shrink-0 text-sm sm:text-base data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md transition-all duration-200"
+            >
+              Web Development
+            </TabsTrigger>
+            <TabsTrigger
+              value="ai"
+              className="flex-shrink-0 text-sm sm:text-base data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md transition-all duration-200"
+            >
+              AI & ML
+            </TabsTrigger>
+          </TabsList>
+        </div>
+
         <TabsContent value="all" className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <SkillCard
             title="AWS Services"
@@ -81,6 +106,7 @@ export default function SkillsPage() {
             category="ai"
           />
         </TabsContent>
+
         <TabsContent value="aws" className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <SkillCard
             title="AWS Services"
@@ -104,6 +130,7 @@ export default function SkillsPage() {
             category="aws"
           />
         </TabsContent>
+
         <TabsContent value="web" className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <SkillCard
             title="React & Next.js"
@@ -127,6 +154,7 @@ export default function SkillsPage() {
             category="web"
           />
         </TabsContent>
+
         <TabsContent value="ai" className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <SkillCard
             title="Machine Learning"
@@ -154,4 +182,3 @@ export default function SkillsPage() {
     </div>
   )
 }
-
