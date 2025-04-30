@@ -39,13 +39,13 @@ export function FeaturedProjects() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-accent/80 z-10" />
             <div className="relative h-60 w-full">
               <Image
-                src={featuredProjects[0].image || "/Images/DE1.png"}
-                alt={featuredProjects[0].title}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover transition-transform group-hover:scale-105"
-                priority
-              />
+              src="/Images/DE1.png" // test with hardcoded fallback
+              alt="Test image"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover transition-transform group-hover:scale-105"
+            />
+
             </div>
             <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
               <h3 className="text-xl font-bold text-white">{featuredProjects[0].title}</h3>
